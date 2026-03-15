@@ -35,16 +35,8 @@ This app runs as an Accessibility Service and listens for the CEC `<Report Audio
 
 ```bash
 adb connect YOUR_TV_IP:PORT
-adb install app-release.apk
+adb install -r app-release.apk
 ```
-
-### Install directly on your TV using Downloader
-
-The easiest way — no computer needed after the first setup:
-
-1. Install the **Downloader** app on your TV (available on the Google TV app store)
-2. Open Downloader and enter code **7563755**
-3. It will fetch the latest APK directly and prompt you to install
 
 ### Build from source
 
