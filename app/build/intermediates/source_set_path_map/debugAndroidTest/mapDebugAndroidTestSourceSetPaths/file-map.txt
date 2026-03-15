@@ -1,0 +1,4 @@
+com.volumeoverlay.test.app-androidTest-0 /Users/mohammad/Work/VolumeOverlay/app/build/generated/res/resValues/androidTest/debug
+com.volumeoverlay.test.app-mergeDebugAndroidTestResources-1 /Users/mohammad/Work/VolumeOverlay/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
+com.volumeoverlay.test.app-mergeDebugAndroidTestResources-2 /Users/mohammad/Work/VolumeOverlay/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
+com.volumeoverlay.test.app-debugAndroidTest-3 /Users/mohammad/Work/VolumeOverlay/app/build/intermediates/merged_res/debugAndroidTest/mergeDebugAndroidTestResources

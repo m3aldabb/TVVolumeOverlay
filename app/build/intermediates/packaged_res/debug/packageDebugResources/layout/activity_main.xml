@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#05080F"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="80dp"
+        android:paddingEnd="80dp"
+        android:paddingTop="48dp"
+        android:paddingBottom="48dp">
+
+        <!-- Header -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="8dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🔊"
+                android:textSize="36sp"
+                android:layout_marginEnd="16dp"/>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="TV Volume Overlay"
+                    android:textColor="#FFFFFF"
+                    android:textSize="40sp"
+                    android:fontFamily="sans-serif-thin"
+                    android:letterSpacing="0.05"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="ON-SCREEN VOLUME FOR GOOGLE TV"
+                    android:textColor="#3300E5FF"
+                    android:textSize="10sp"
+                    android:letterSpacing="0.3"
+                    android:fontFamily="sans-serif-medium"/>
+            </LinearLayout>
+
+            <!-- Live volume badge -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:background="@drawable/badge_background"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"
+                android:paddingTop="12dp"
+                android:paddingBottom="12dp">
+
+                <TextView
+                    android:id="@+id/current_volume_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    android:textColor="#00E5FF"
+                    android:textSize="36sp"
+                    android:fontFamily="sans-serif-thin"
+                    android:gravity="center"/>
+
+                <TextView
+                    android:id="@+id/max_volume_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="/ 100"
+                    android:textColor="#4400E5FF"
+                    android:textSize="11sp"
+                    android:fontFamily="sans-serif-light"
+                    android:gravity="center"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#0D00E5FF"
+            android:layout_marginBottom="32dp"
+            android:layout_marginTop="16dp"/>
+
+        <!-- Status card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/card_background"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:layout_marginBottom="24dp">
+
+            <TextView
+                android:id="@+id/status_dot"
+                android:layout_width="12dp"
+                android:layout_height="12dp"
+                android:background="@drawable/dot_inactive"
+                android:layout_marginEnd="14dp"/>
+
+            <TextView
+                android:id="@+id/status_text"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Service not active"
+                android:textColor="#AAAAAA"
+                android:textSize="15sp"
+                android:fontFamily="sans-serif"/>
+
+            <Button
+                android:id="@+id/btn_enable"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Enable"
+                android:textSize="13sp"
+                android:textColor="@color/btn_text_accent"
+                android:background="@drawable/button_outline"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- Three column buttons -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="32dp">
+
+            <Button
+                android:id="@+id/btn_reset"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="↺  Reset"
+                android:textSize="13sp"
+                android:textColor="@color/btn_text_white"
+                android:background="@drawable/button_secondary"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginEnd="8dp"
+                android:focusable="true"/>
+
+            <Button
+                android:id="@+id/btn_set_volume"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="✎  Set Level"
+                android:textSize="13sp"
+                android:textColor="@color/btn_text_white"
+                android:background="@drawable/button_secondary"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:focusable="true"/>
+
+            <Button
+                android:id="@+id/btn_set_max"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="⬆  Max Vol"
+                android:textSize="13sp"
+                android:textColor="@color/btn_text_accent"
+                android:background="@drawable/button_outline"
+                android:paddingTop="14dp"
+                android:paddingBottom="14dp"
+                android:layout_marginStart="8dp"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- Style picker row -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/card_background"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp"
+            android:layout_marginBottom="24dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OVERLAY STYLE"
+                    android:textColor="#3300E5FF"
+                    android:textSize="9sp"
+                    android:letterSpacing="0.3"
+                    android:fontFamily="sans-serif-medium"
+                    android:layout_marginBottom="4dp"/>
+
+                <TextView
+                    android:id="@+id/style_display"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="H1 — Strip + VOL above"
+                    android:textColor="#CCFFFFFF"
+                    android:textSize="14sp"/>
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btn_set_style"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Change"
+                android:textSize="13sp"
+                android:textColor="@color/btn_text_accent"
+                android:background="@drawable/button_outline"
+                android:paddingStart="20dp"
+                android:paddingEnd="20dp"
+                android:paddingTop="8dp"
+                android:paddingBottom="8dp"
+                android:focusable="true"/>
+
+        </LinearLayout>
+
+        <!-- Instructions section -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HOW TO SET UP"
+            android:textColor="#3300E5FF"
+            android:textSize="10sp"
+            android:letterSpacing="0.3"
+            android:fontFamily="sans-serif-medium"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Step cards -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_background"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp"
+            android:layout_marginBottom="32dp">
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:gravity="center_vertical">
+                <TextView android:layout_width="32dp" android:layout_height="32dp" android:text="1" android:textColor="#00E5FF" android:textSize="13sp" android:fontFamily="sans-serif-medium" android:gravity="center" android:background="@drawable/step_circle"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Tap Enable → find TV Volume Overlay in the list" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0DFFFFFF"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:gravity="center_vertical">
+                <TextView android:layout_width="32dp" android:layout_height="32dp" android:text="2" android:textColor="#00E5FF" android:textSize="13sp" android:fontFamily="sans-serif-medium" android:gravity="center" android:background="@drawable/step_circle"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Toggle TV Volume Overlay ON and accept the permission" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0DFFFFFF"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:gravity="center_vertical">
+                <TextView android:layout_width="32dp" android:layout_height="32dp" android:text="3" android:textColor="#00E5FF" android:textSize="13sp" android:fontFamily="sans-serif-medium" android:gravity="center" android:background="@drawable/step_circle"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Return here — it should say overlay is ready" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0DFFFFFF"/>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:gravity="center_vertical">
+                <TextView android:layout_width="32dp" android:layout_height="32dp" android:text="4" android:textColor="#00E5FF" android:textSize="13sp" android:fontFamily="sans-serif-medium" android:gravity="center" android:background="@drawable/step_circle"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Press volume +/- anywhere — overlay appears!" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Tip -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="@drawable/tip_background"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:paddingTop="14dp"
+            android:paddingBottom="14dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="💡"
+                android:textSize="16sp"
+                android:layout_marginEnd="12dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="If the counter drifts out of sync with your soundbar, use Set Level to correct it manually."
+                android:textColor="#88FFFFFF"
+                android:textSize="12sp"
+                android:lineSpacingMultiplier="1.4"/>
+        </LinearLayout>
+
+        <!-- Credit -->
+        <TextView
+            android:id="@+id/github_link"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="github.com/m3aldabb"
+            android:textColor="#33FFFFFF"
+            android:textSize="11sp"
+            android:letterSpacing="0.05"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center"
+            android:layout_marginTop="24dp"
+            android:focusable="true"
+            android:clickable="true"/>
+
+    </LinearLayout>
+</ScrollView>

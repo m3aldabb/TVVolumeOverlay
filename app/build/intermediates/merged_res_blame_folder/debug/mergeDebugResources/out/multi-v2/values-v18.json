@@ -1,0 +1,38 @@
+{
+    "logs": [
+        {
+            "outputFile": "com.volumeoverlay.app-mergeDebugResources-22:/values-v18/values-v18.xml",
+            "map": [
+                {
+                    "source": "/Users/mohammad/.gradle/caches/9.0.0/transforms/d526698e0fac52135cb3a1afc3646397/transformed/leanback-1.0.0/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "10",
+                        "endColumns": "12",
+                        "endOffsets": "642"
+                    },
+                    "to": {
+                        "startLines": "3",
+                        "startColumns": "4",
+                        "startOffsets": "104",
+                        "endLines": "11",
+                        "endColumns": "12",
+                        "endOffsets": "691"
+                    }
+                },
+                {
+                    "source": "/Users/mohammad/.gradle/caches/9.0.0/transforms/44ab3bb81eadda441f47ab2db4ef634d/transformed/appcompat-1.6.1/res/values-v18/values-v18.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "48",
+                        "endOffsets": "99"
+                    }
+                }
+            ]
+        }
+    ]
+}

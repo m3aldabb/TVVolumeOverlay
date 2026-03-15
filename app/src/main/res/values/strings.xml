@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TV Volume Overlay</string>
+    <string name="accessibility_service_description">TV Volume Overlay shows an on-screen volume number whenever you press volume +/- on your remote, across all apps on your Google TV.</string>
+    <string name="service_active">✓ Service is ACTIVE</string>
+    <string name="service_inactive">⚠ Service is NOT active</string>
+</resources>

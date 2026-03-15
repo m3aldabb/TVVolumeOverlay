@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/overlay_container"
+    android:layout_width="160dp"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@drawable/overlay_background"
+    android:paddingStart="20dp"
+    android:paddingEnd="20dp"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:alpha="0.0">
+
+    <!-- VOLUME label + speaker -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginBottom="2dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🔊  VOLUME"
+            android:textColor="#88FFFFFF"
+            android:textSize="9sp"
+            android:letterSpacing="0.2"
+            android:fontFamily="sans-serif-medium" />
+
+    </LinearLayout>
+
+    <!-- Big centered number -->
+    <TextView
+        android:id="@+id/volume_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="68sp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Progress bar -->
+    <ProgressBar
+        android:id="@+id/volume_bar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:max="50"
+        android:progress="0"
+        android:progressTint="#AAFFFFFF"
+        android:progressBackgroundTint="#22FFFFFF"
+        android:layout_marginBottom="6dp" />
+
+    <!-- / max label centered -->
+    <TextView
+        android:id="@+id/volume_max_label"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="/ 50"
+        android:textColor="#44FFFFFF"
+        android:textSize="10sp"
+        android:fontFamily="sans-serif-light"
+        android:gravity="center" />
+
+</LinearLayout>

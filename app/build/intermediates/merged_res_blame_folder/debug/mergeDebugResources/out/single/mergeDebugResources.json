@@ -1,0 +1,90 @@
+[
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "com.volumeoverlay.app-main-26:/mipmap-xhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_badge_background.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/badge_background.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_button_secondary.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/button_secondary.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_dot_active.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/dot_active.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_text_color_button.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/text_color_button.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/mipmap-hdpi_ic_launcher.png.flat",
+        "source": "com.volumeoverlay.app-main-26:/mipmap-hdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/color_btn_text_accent.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/color/btn_text_accent.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_tip_background.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/tip_background.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/color_btn_text_white.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/color/btn_text_white.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_text_color_button_accent.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/text_color_button_accent.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/layout_activity_main.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/layout/activity_main.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "com.volumeoverlay.app-main-26:/mipmap-xxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/xml_accessibility_service_config.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/xml/accessibility_service_config.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_overlay_background.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/overlay_background.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_card_background.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/card_background.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable-xhdpi_banner.png.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable-xhdpi/banner.png"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/mipmap-mdpi_ic_launcher.png.flat",
+        "source": "com.volumeoverlay.app-main-26:/mipmap-mdpi/ic_launcher.png"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/layout_overlay_volume.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/layout/overlay_volume.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_step_circle.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/step_circle.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_button_outline.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/button_outline.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/drawable_dot_inactive.xml.flat",
+        "source": "com.volumeoverlay.app-main-26:/drawable/dot_inactive.xml"
+    },
+    {
+        "merged": "com.volumeoverlay.app-debug-24:/mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "com.volumeoverlay.app-main-26:/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]
