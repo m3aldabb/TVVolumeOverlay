@@ -29,14 +29,22 @@ This app runs as an Accessibility Service and listens for the CEC `<Report Audio
 
 ### Quick install (APK)
 
-1. Download `app-debug.apk` from the [Releases](https://github.com/m3aldabb/tv-volume-overlay/releases) page
+1. Download `app-release.apk` from the [Releases](https://github.com/m3aldabb/tv-volume-overlay/releases) page
 2. On your TV: **Settings → Privacy → Security & Restrictions** → enable Unknown Sources
 3. Transfer the APK to your TV and install it, or use ADB:
 
 ```bash
 adb connect YOUR_TV_IP:PORT
-adb install app-debug.apk
+adb install app-release.apk
 ```
+
+### Install directly on your TV using Downloader
+
+The easiest way — no computer needed after the first setup:
+
+1. Install the **Downloader** app on your TV (available on the Google TV app store)
+2. Open Downloader and enter code **7563755**
+3. It will fetch the latest APK directly and prompt you to install
 
 ### Build from source
 
@@ -63,3 +71,4 @@ adb install app-debug.apk
 **Style didn't change** — press volume once after switching; the overlay rebuilds on the next volume event
 
 **ADB won't connect** — Google TV uses a random port each session, check the current one in Wireless Debugging settings
+
