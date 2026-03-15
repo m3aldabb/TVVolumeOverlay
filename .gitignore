@@ -1,6 +1,37 @@
+# Built application files
+*.apk
+*.aar
+*.ap_
+*.aab
+
+# Gradle
 .gradle/
-.build/
-/build/
+build/
+
+# Local configuration
+local.properties
+
+# Android Studio / IntelliJ
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Keystore files (never commit signing keys)
+*.jks
+*.keystore
+
+# Build outputs
 app/build/
 app/release/
-.idea/
+/build/
+
+# OS / editor
+.DS_Store
+*.swp
+*.swo
+*~
+
+# Logs and reports
+*.log
+build/reports/
