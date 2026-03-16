@@ -27,6 +27,14 @@ This app runs as an Accessibility Service and listens for the CEC `<Report Audio
 
 ## Install
 
+### Install directly on your TV using Downloader
+
+The easiest way — no computer needed after the first setup:
+
+1. Install the **Downloader** app on your TV (available on the Google TV app store)
+2. Open Downloader and enter code **7563755**
+3. It will fetch the latest APK directly and prompt you to install
+
 ### Quick install (APK)
 
 1. Download `app-release.apk` from the [Releases](https://github.com/m3aldabb/tv-volume-overlay/releases) page
