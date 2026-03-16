@@ -132,7 +132,7 @@
                 android:id="@+id/btn_enable"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Enable"
+                android:text="Start"
                 android:textSize="13sp"
                 android:textColor="@color/btn_text_accent"
                 android:background="@drawable/button_outline"
@@ -276,21 +276,21 @@
 
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:gravity="center_vertical">
                 <TextView android:layout_width="32dp" android:layout_height="32dp" android:text="1" android:textColor="#00E5FF" android:textSize="13sp" android:fontFamily="sans-serif-medium" android:gravity="center" android:background="@drawable/step_circle"/>
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Tap Enable → find TV Volume Overlay in the list" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Tap Start to launch the overlay service" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
             </LinearLayout>
 
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0DFFFFFF"/>
 
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:gravity="center_vertical">
                 <TextView android:layout_width="32dp" android:layout_height="32dp" android:text="2" android:textColor="#00E5FF" android:textSize="13sp" android:fontFamily="sans-serif-medium" android:gravity="center" android:background="@drawable/step_circle"/>
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Toggle TV Volume Overlay ON and accept the permission" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Grant the overlay permission if prompted" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
             </LinearLayout>
 
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0DFFFFFF"/>
 
             <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal" android:paddingTop="14dp" android:paddingBottom="14dp" android:gravity="center_vertical">
                 <TextView android:layout_width="32dp" android:layout_height="32dp" android:text="3" android:textColor="#00E5FF" android:textSize="13sp" android:fontFamily="sans-serif-medium" android:gravity="center" android:background="@drawable/step_circle"/>
-                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Return here — it should say overlay is ready" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
+                <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Return here — status turns cyan when active" android:textColor="#CCFFFFFF" android:textSize="14sp" android:layout_marginStart="16dp"/>
             </LinearLayout>
 
             <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#0DFFFFFF"/>
